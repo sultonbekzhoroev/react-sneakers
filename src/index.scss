@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: "Inter" system-ui;
+  background-color: #e7f6ff;
+}
+
+* {
+  font-family: "Inter" system-ui;
+}
+
+.wrapper {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 7px;
+}
+
+header {
+  border-bottom: 1px solid #eaeaea;
+
+  img {
+    margin-right: 15px;
+    border-radius: 15px;
+  }
+  h3,
+  p {
+    margin: 0;
+  }
+}
+
+.content {
+  h1 {
+    margin: 0;
+  }
+  button {
+    width: 30px;
+  }
+}
+
+.button {
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+}
+
+.search-block {
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  padding: 0 15px;
+  input {
+    border: 0;
+    padding: 7px;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  svg {
+    opacity: 0.2;
+  }
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.drawer {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  right: 0;
+  background: #ffffff;
+  box-shadow: -10 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  .items {
+    overflow: auto;
+  }
+  h2 {
+    margin: 0;
+  }
+}
+
+.cartItem {
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  b {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  svg {
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.cartTotalBlock {
+  li {
+    display: flex;
+    align-items: center;
+  }
+  div {
+    flex: 1;
+    height: 1px;
+    border-bottom: 1px dashed #dfdfdf;
+  }
+}
+
+.items {
+  flex: 1;
+}
+
+.btnOrder {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  background: #9dd558;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    svg {
+      transform: translateX(10px);
+    }
+  }
+  svg {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+}
